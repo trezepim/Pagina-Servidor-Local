@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
 }
@@ -5,7 +9,7 @@ body {
 #navigation {
   box-sizing: border-box;
   padding: 0; /* 🔹 remove o espaço nas laterais */
-  background-color: #fff;
+  background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: fixed;
   top: 0; /* 🔹 garante que grude no topo */
@@ -25,23 +29,17 @@ body {
 }
 
 .logo {
-  width: 12.4%;
-  max-width: 21.875rem;
-  height: 4.0625rem;
-  /* margin-right auto pushes everything away from it to the right */
+  width: 15%;
   margin: 0 auto 0 0;
-  margin-left: -80px;
-  padding: 0;
+  margin-left: -70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
 }
 
 .logo img {
-  max-width: 100%; /* largura máxima do container */
-  height: auto; /* mantém proporção real */
-  object-fit: contain;
+  max-width: 100%;
+  height: auto;
 }
 
 .nav {
@@ -61,14 +59,13 @@ body {
 .nav-li {
   list-style: none;
   padding: 2rem 0;
-  /* prevent flexbox from squishing it */
   flex: none;
 }
 
 .li-link {
-  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-size: 1.05rem;
   font-family: "Minecraftia", sans-serif;
-  font-weight: 500;
+  font-weight: normal;
   letter-spacing: 1px;
   line-height: 1.5em;
   text-decoration: none;
@@ -76,4 +73,8 @@ body {
   color: var(--bodyTextColor);
   display: block;
   position: relative;
+}
+
+.li-link:hover {
+  font-weight: bolder;
 }
