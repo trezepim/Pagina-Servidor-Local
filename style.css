@@ -8,14 +8,12 @@ body {
 
 #navigation {
   box-sizing: border-box;
-  padding: 0; /* 🔹 remove o espaço nas laterais */
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: fixed;
-  top: 0; /* 🔹 garante que grude no topo */
-  left: 0; /* 🔹 garante que grude na lateral esquerda */
-  right: 0; /* 🔹 garante que grude na lateral direita */
-  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header-container {
@@ -70,7 +68,7 @@ body {
   line-height: 1.5em;
   text-decoration: none;
   margin: 0;
-  color: var(--bodyTextColor);
+  color: black;
   display: block;
   position: relative;
 }
