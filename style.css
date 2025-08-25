@@ -33,11 +33,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+
+.logo:hover .logo-link {
+  font-weight: bolder;
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 30%;
   height: auto;
+}
+
+.logo-link {
+  font-size: 1.05rem;
+  font-family: "Minecraftia", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  text-decoration: none;
+  margin: 0;
+  color: black;
+  display: block;
+  position: relative;
 }
 
 .nav {
